@@ -28,7 +28,7 @@ Repo: https://github.com/rameshavinash94/Spiff_DE_exercise
 6. Once done, Redirect to Codebase directory 
 
 ```
-cd DEexercise/Codebase
+cd DEexercise/Spiff_DE_exercise/Codebase
 ```
 
 7. Install all the project requirements using below command
