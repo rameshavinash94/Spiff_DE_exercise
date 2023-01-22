@@ -24,7 +24,7 @@ The main requirement is to pass the following arguments to a function:
 
  - The Factory pattern is used to create the CommissionStrategyFactory class which is used to create the CommissionStrategy class.
 
- - The Strategy pattern is used to create the CommissionStrategy class which is used to calculate the commission for the sales rep.
+ - The Strategy pattern is used to create the CommissionStrategy class which is used to calculate the commission for the sales rep. So, in the future if we want to change the commission calculation criteria, we can create a new class that inherits from the CommissionStrategy class and implement the calculate_commission method to calculate the commission based on the new criteria.
 
  - The CommissionStrategy class is used to calculate the commission for the sales rep.
 
