@@ -46,7 +46,7 @@ The main requirement is to pass the following arguments to a function:
 
 1. Install python 3.8 or above
 
-2. Create a Project Directly and redirect to the directory using the below Commands 
+2. Create a Project Directory and redirect to the directory using the below Commands 
 
 ```
 mkdir DEexercise && cd DEexercise
