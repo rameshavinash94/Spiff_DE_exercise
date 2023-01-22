@@ -94,3 +94,10 @@ python test_commissioncalculation_criterias.py
 ```
 
 ## SAMPLE SNIPPET AFTER RUNNING
+<img width="671" alt="Screen Shot 2023-01-21 at 8 34 28 PM" src="https://user-images.githubusercontent.com/87649563/213900797-b8e4a8e6-9dd2-4543-8265-17cbf6608519.png">
+
+## SAMPLE TEST REPORT SNIPPET
+<img width="1072" alt="Screen Shot 2023-01-21 at 8 36 29 PM" src="https://user-images.githubusercontent.com/87649563/213900849-29289e18-8ba4-40d3-8643-279a6ab1aea3.png">
+
+
+
