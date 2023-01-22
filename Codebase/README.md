@@ -14,7 +14,7 @@ The main requirement is to pass the following arguments to a function:
 
  The function  should calculate the commission for the sales rep between the start and end dates.
 
-***This can be done in a simple basic functional programming with few lines fo code but i have followed the object oriented programming principles and  exceptional handling techniques to achieve this such that the code is more readable, maintainable, testable and can be extended to include more features in the future.***  
+***This can be done in a simple  functional programming approach with few lines fo code but i have followed the object oriented programming principles and  exceptional handling techniques to achieve this such that the code is more readable, maintainable, testable and can be extended to include more features in the future.***  
 
  - Have followed the SOLID principles of OOP and have used the Factory pattern and the Strategy pattern to achieve.
  
