@@ -49,7 +49,8 @@ The main requirement is to pass the following arguments to a function:
 2. Create a Project Directory and redirect to the directory using the below Commands 
 
 ```
-mkdir DEexercise && cd DEexercise
+mkdir DEexercise
+cd DEexercise
 ```
 
 3. Next, run the script below within the directory to create the virtual environment 
