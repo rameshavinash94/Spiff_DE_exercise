@@ -50,8 +50,4 @@ python main.py
 python test_commissioncalculation_criterias.py
 ```
 
-<<<<<<< HEAD
 ## SAMPLE SNIPPET AFTER RUNNING
-=======
-## SAMPLE SNIPPET AFTER RUNNING
->>>>>>> 67845a94b2b1a8a4d4c9baf2ecbb0330dfd9d9bc
