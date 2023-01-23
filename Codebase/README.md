@@ -1,9 +1,5 @@
 # Spiff Data Engineering Candidate Coding Exercises
   
-<<<<<<< HEAD
-=======
-
->>>>>>> 5c185687ef3cce59bffe89c144c0b55072acd669
 For this exercise, I wrote a python script that calculates the commission for a sales rep.
 
 The main requirement is to pass the following arguments to a function:
@@ -13,7 +9,6 @@ The main requirement is to pass the following arguments to a function:
 > - start_date (str): Start date.
 > 
 > - end_date (str): End date.
-
 
  The function  should calculate the commission for the sales rep between the start and end dates.
 
@@ -35,17 +30,14 @@ The main requirement is to pass the following arguments to a function:
 
  - The JsonToDfConverter class under the DataTransformations module is used to convert the json data to a pandas dataframe.
 
- - The DFJoiner class under the DataTransformations module is used to join the deals_df and products_df dataframes on the product_id column.
+ - The DFMerger class under the DataTransformations module is used to merge the deals_df and products_df dataframes on the product_id and id column accordingly.
 
  - The CalcuateCommission class is used to calculate the commission for the sales rep.
 
  - The QueryData class is used to input the data into a dataclass.
 
-<<<<<<< HEAD
  - The SalesDataSingleton class is a singleton class that holds the sales data.the reason for this class is to avoid reading the sales data from the csv file every time the data is validated.the sales data is read from the csv file only once and then stored in the singleton class.
 
-=======
->>>>>>> 5c185687ef3cce59bffe89c144c0b55072acd669
  - The main.py file is used to run the script.
  
  - The test_commissioncalculation_criterias.py file is used to perform unit testing on the script
@@ -106,9 +98,3 @@ python test_commissioncalculation_criterias.py
 
 ## SAMPLE TEST REPORT SNIPPET
 <img width="1072" alt="Screen Shot 2023-01-21 at 8 36 29 PM" src="https://user-images.githubusercontent.com/87649563/213900849-29289e18-8ba4-40d3-8643-279a6ab1aea3.png">
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 5c185687ef3cce59bffe89c144c0b55072acd669
