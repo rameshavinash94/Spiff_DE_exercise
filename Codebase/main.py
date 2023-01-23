@@ -60,9 +60,9 @@ def PrintCommission(sales_rep_name, start_date, end_date):
 
 if __name__ == "__main__":
     #deals.json url
-    deals = load_json("/Users/avinash/Desktop/DEexercise/Spiff_DE_exercise-main/data/deals.json")
+    deals = load_json("https://raw.githubusercontent.com/rameshavinash94/Spiff_DE_exercise/main/data/deals.json")
     #products.json url
-    products = load_json("/Users/avinash/Desktop/DEexercise/Spiff_DE_exercise-main/data/products.json")
+    products = load_json("https://raw.githubusercontent.com/rameshavinash94/Spiff_DE_exercise/main/data/products.json")
 
     #convert the deals.json file to a pandas dataframe
     deals_df = JsonToDfConverter(deals).convert()
