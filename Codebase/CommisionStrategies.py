@@ -1,6 +1,7 @@
 from CommissionStrategyInterface import CommissionStrategy
 from UserQuerydata  import QueryData
 import pandas as pd
+from SalesDataSingleton import SalesDataSingleton
 
 class FixedCommissionStrategy(CommissionStrategy):
     """
@@ -27,8 +28,11 @@ class FixedCommissionStrategy(CommissionStrategy):
         #Get the end date from the data
         end_date = pd.to_datetime(data.end_date)
 
-        #read the sales data from the sales_data.csv file
-        sales_data = pd.read_csv("sales_data.csv")
+        # #read the sales data from the csv file
+        # sales_data = pd.read_csv("sales_data.csv")
+
+        # read the sales data from the Singleton class
+        sales_data = SalesDataSingleton.get_instance().get_sales_data()
 
         #change the date column to a datetime object
         sales_data['date'] = pd.to_datetime(sales_data['date'])

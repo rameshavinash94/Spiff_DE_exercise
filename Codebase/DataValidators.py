@@ -1,6 +1,9 @@
 import pandas as pd
+from SalesDataSingleton import SalesDataSingleton
 #import datetime
 
+#right now this is just a placeholder for the data validation.
+# we can divide this into multiple classes if needed in the future based on the data validation requirements.
 class DataSchemaValidators:
     def validate_data(self,data) -> bool:
         """
@@ -64,9 +67,12 @@ class DataSchemaValidators:
         #     raise ValueError("end_date must be before current date")
             
         '''
+        # #load the sales data
+        # sales_data = pd.read_csv("sales_data.csv")
 
-        #validate the sales rep name is in the sales_data.csv file
-        sales_data = pd.read_csv("sales_data.csv")
+        # read the sales data from the Singleton class
+        sales_data = SalesDataSingleton.get_instance().get_sales_data()
+
         sales_rep_names = sales_data['sales_rep_name'].unique()
         if data.sales_rep_name not in sales_rep_names:
             raise ValueError("sales_rep_name must be in the sales_data.csv file")

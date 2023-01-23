@@ -18,21 +18,22 @@ class JsonToDfConverter:
         df = pd.json_normalize(self.json)
         return df
 
-class DFJoiner:
+class DFMerger:
     """
-    Join two Pandas DataFrames.
+    Merge two Pandas DataFrames.
     """
-    def __init__(self, df1, df2, on):
+    def __init__(self, df1, df2, lefton, righton):
         self.df1 = df1
         self.df2 = df2
-        self.on = on
+        self.lefton = lefton
+        self.righton = righton
 
-    def join(self) -> pd.DataFrame:
+    def merge(self) -> pd.DataFrame:
         """
         Join two Pandas DataFrames.
 
         Returns:
             pd.DataFrame : Pandas DataFrame
         """
-        joined_df = self.df1.join(self.df2.set_index('id'), on=self.on)
+        joined_df = pd.merge(self.df1, self.df2, left_on=self.lefton, right_on=self.righton)
         return joined_df
